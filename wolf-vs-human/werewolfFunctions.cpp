@@ -110,7 +110,12 @@ void doWerewolfNextMove(const int playerX, const int playerY)
 	}
 	if (werewolfStunnedCount > 0)
 	{
-		werewolfStunnedCount --
+		werewolfStunnedCount --;
+		return;
+	}
+	if (skipWerewolfsTurn) 
+	{
+		skipWerewolfsTurn = false;
 		return;
 	}
 
