@@ -55,6 +55,7 @@ bool isOpenSpaceForWerewolf(const int, const int);
 
 bool werewolfIsAlive()
 {
+	//2. Monty Choy
 	if (werewolfHealth > 0) 
 	{
 		return true;
