@@ -80,8 +80,14 @@ char getWerewolfSymbol()
 
 int doWerewolfHit(const int hitpoints)
 {
-	/* MISSING CODE */
-	return 1;
+	//4. MOnty Choy
+	werewolfHealth =- hitpoints;
+	if (werewolfHealth < 0) 
+	{
+		werewolfHealth += -werewolfHealth;
+	}
+	werewolfStunnedCount += 2;
+	return werewolfHealth;
 }
 
 void doWerewolfNextMove(const int playerX, const int playerY)
