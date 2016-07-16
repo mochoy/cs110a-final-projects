@@ -79,6 +79,9 @@ char getWerewolfSymbol()
 	if (werewolfIsAlive() && !werewolfIsStunned())
 	{
 		return WEREWOLF_SYMBOL_NORMAL;
+	} else if ((werewolfIsAlive() && werewolfIsStunned()) 
+	{
+		return WEREWOLF_SYMBOL_STUNNED;
 	}
 	return WEREWOLF_SYMBOL_NORMAL;
 }
