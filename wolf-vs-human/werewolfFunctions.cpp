@@ -60,6 +60,7 @@ bool werewolfIsAlive()
 	{
 		return true;
 	}
+	return false;
 }
 
 bool werewolfIsStunned()
@@ -74,13 +75,17 @@ bool werewolfIsStunned()
 
 char getWerewolfSymbol()
 {
-	/* MISSING CODE */
+	//4. Monty Choy
+	if (werewolfIsAlive() && !werewolfIsStunned())
+	{
+		return WEREWOLF_SYMBOL_NORMAL;
+	}
 	return WEREWOLF_SYMBOL_NORMAL;
 }
 
 int doWerewolfHit(const int hitpoints)
 {
-	//4. MOnty Choy
+	//5. MOnty Choy
 	werewolfHealth =- hitpoints;
 	if (werewolfHealth < 0) 
 	{
