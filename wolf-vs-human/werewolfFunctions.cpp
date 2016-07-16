@@ -64,7 +64,11 @@ bool werewolfIsAlive()
 
 bool werewolfIsStunned()
 {
-	/* MISSING CODE */
+	//3. Monty Choy
+	if (werewolfStunnedCount > 0) 
+	{
+		return true;
+	}
 	return false;
 }
 
