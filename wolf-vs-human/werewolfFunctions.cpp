@@ -148,7 +148,9 @@ void doWerewolfNextMove(const int playerX, const int playerY)
 		}
 		else
 		{
-			bool randomlyPickX = (true /* MISSING CODE */);
+			//6. Monty Choy
+			srand(time(NULL));	
+			bool randomlyPickX = (rand()%2 == 0 ? true: false);
 			if (randomlyPickX)
 			{
 				werewolfX = possibleNextX;
