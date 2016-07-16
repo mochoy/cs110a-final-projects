@@ -108,9 +108,9 @@ void doWerewolfNextMove(const int playerX, const int playerY)
 	{
 		return;
 	}
-	if (werewolfIsStunned())
+	if (werewolfStunnedCount > 0)
 	{
-		/* MISSING CODE */
+		werewolfStunnedCount --
 		return;
 	}
 
