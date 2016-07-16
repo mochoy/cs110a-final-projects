@@ -166,7 +166,13 @@ void doWerewolfNextMove(const int playerX, const int playerY)
 bool isOpenSpaceForWerewolf(const int x, const int y)
 {
 	char mapSquare = getMapSquare(x, y);
-	return (mapSquare == MAP_SQUARE_EMPTY /* MISSING CODE */);
+	return (mapSquare == MAP_SQUARE_EMPTY 
+		|| mapSquare == MAP_SQUARE_KEY
+		|| mapSquare == MAP_SQUARE_PEBBLE
+		|| mapSquare == MAP_SQUARE_PEBBLES
+		|| mapSquare == MAP_SQUARE_PLANK
+		|| mapSquare == MAP_SQUARE_PLANK_SET
+		|| mapSquare == MAP_SQUARE_ROPE);
 }
 
 // DO NOT CHANGE OR REMOVE THE FOLLOWING LINE
