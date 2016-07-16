@@ -55,7 +55,10 @@ bool isOpenSpaceForWerewolf(const int, const int);
 
 bool werewolfIsAlive()
 {
-	return (werewolfHealth > 0 ? true: false);
+	if (werewolfHealth > 0) 
+	{
+		return true;
+	}
 }
 
 bool werewolfIsStunned()
