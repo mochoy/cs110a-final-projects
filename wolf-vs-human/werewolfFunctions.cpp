@@ -103,6 +103,11 @@ int doWerewolfHit(const int hitpoints)
 
 void doWerewolfNextMove(const int playerX, const int playerY)
 {
+	//6. Monty Choy
+	if (!werewolfIsAlive()) 
+	{
+		return;
+	}
 	if (werewolfIsStunned())
 	{
 		/* MISSING CODE */
